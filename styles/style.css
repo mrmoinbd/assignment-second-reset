@@ -283,21 +283,21 @@ ul li a {
     .button-box {
         /* height: 50px; */
         /* width: 83px; */
-        width: 155px;
+        width: 145px;
         height: 74px;
 
     }
-   
+
     .circle {
         width: 30px;
         height: 30px;
     }
 
     #badge-five {
-        /* margin-left: 180px;
-        margin-top: -510px; */
-        margin-left: 215px;
-        margin-top: -580px;
+        margin-left: 180px;
+        margin-top: -510px;
+        /* margin-left: 215px;
+        margin-top: -580px; */
     }
 
     #badge-three {
@@ -476,12 +476,6 @@ ul li a {
     margin-top: 14px;
 }
 
-/* .chart-full-des {
-    width: 100%;
-    height: 100%;
-    background: rgb(34, 34, 34);
-    
-} */
 .chart-container {
     background-color: #222;
 }
@@ -578,7 +572,7 @@ select {
         border: none;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.1);
-        width: 90%;
+        width: calc(100% - 8px);
 
     }
 }
@@ -639,6 +633,10 @@ select {
 
 /* meet our section media query start */
 @media screen and (max-width: 576px) {
+    .hidden {
+        display: none;
+    }
+
     .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
