@@ -131,6 +131,71 @@ ul li a {
 
 
 
+/* extra mile section style start */
+.extra-mile {
+    border-radius: 18px;
+    backdrop-filter: blur(20px);
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.extra-mile-container {
+    padding: 30px;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extra-mile-left h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.extra-mile-left p {
+    margin-bottom: 34px;
+}
+
+.extra-mile-right img {
+    width: 366px;
+    height: 312px;
+    /* width: 100%; */
+    border-radius: 18px;
+}
+
+/* extra mile section media query start */
+
+@media screen and (max-width: 576px) {
+    .extra-mile-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .extra-mile-left h1 {
+        font-size: 2rem;
+    }
+
+    .primary-btn {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .secondary-color {
+        margin-bottom: 24px;
+    }
+
+    .extra-mile-right img {
+        width: 100%;
+    }
+
+}
+
+/* extra mile section media query end */
+/* extra mile section style end */
+
+
 /* bmi calculator section style start */
 .bmi {
     justify-content: center;
