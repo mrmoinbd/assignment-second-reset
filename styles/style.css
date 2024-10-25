@@ -115,44 +115,74 @@ ul li a {
 /* navbar style end */
 
 /* banner section style start */
-.banner {
-    margin-top: 32px;
-    align-items: center;
+.banner-container {
+    display: flex;
+    width: 80%;
+    margin: auto;
     justify-content: space-between;
 }
 
-.banner-title {
-    font-size: 5rem;
+.banner-content h2 {
+    width: 520px;
+    font-family: Inter, sans-serif;
+    font-size: 78px;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 85px;
+    color: white;
+    width: 100%;
+
 }
 
-.span-title {
-    font-family: 'Miama', sans-serif;
-    font-size: 5rem;
+.miama {
+    font-family: Miama, sans-serif;
+    font-size: 78px;
     font-weight: 400;
+    display: inline-block;
+    height: 40px;
+
 }
 
-.banner-des {
+/* .banner-text-des{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+margin-top: 28px;
+} */
+.button {
+    display: flex;
+    gap: 14px;
     margin-top: 28px;
-    margin-bottom: 28px;
 }
 
-button {
-    margin-right: 14px;
-}
+/* .btn-primary{
+    padding: 0.7rem 1.2rem;
+    background-color: rgb(255, 84, 0);
+    border-radius: 38px;
+    border: 1px solid rgb(255, 84, 0);
+    font-weight: 800;
+    color: white;
+    font-family: Inter , sans-serif; */
 
 .btn {
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255);
 }
 
-.badge-box {
-    height: 60px;
+/* banner right side */
+.button-box {
+    height: 90px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     font-size: 1.25rem;
     font-weight: 600;
     backdrop-filter: blur(20px);
+
 }
 
 .para {
@@ -167,7 +197,7 @@ button {
     height: 100%;
 }
 
-.badge-1 {
+#badge-five {
     padding: 12px 20px;
     font-weight: 500;
     margin-left: 227px;
@@ -177,7 +207,7 @@ button {
 
 }
 
-.badge-2 {
+#badge-three {
     display: flex;
     padding: 18px 22px 10px;
     font-weight: 500;
@@ -197,27 +227,28 @@ button {
     margin-top: 3px;
 }
 
-.five-plus {
+#five {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-.three-plus {
+#three {
     font-size: 1.6rem;
     font-weight: 700;
 }
-
 
 .three-dot {
     display: none;
 }
 
-/* banner media query start */
+/* header section banner and navbar media query start */
+
 @media screen and (max-width: 576px) {
-    .navbar {
+
+
+    .nvbar {
         width: 90%;
         margin: 0rem auto;
-
     }
 
     h3 {
@@ -238,7 +269,7 @@ button {
     }
 
     /* Banner section */
-    .banner {
+    .banner-container {
         display: flex;
         width: 90%;
         flex-direction: column;
@@ -250,47 +281,46 @@ button {
         margin-top: 51px;
     }
 
-    .span-title {
+    .miama {
         font-size: 36px;
     }
 
-    .secondary-color {
+    .banner-paragraph {
         font-size: 16px;
         width: 260px;
     }
 
-    .primary-btn {
+    .primary-primary {
         padding: 0.7rem 0.9rem;
     }
 
-    /* Banner right */
-    .badge-box {
+    .button-box {
         height: 50px;
         width: 83px;
     }
 
-    .badge-1 {
+    #badge-five {
         margin-left: 180px;
         margin-top: -510px;
     }
 
-    .badge-2 {
+    #badge-three {
         margin-left: 30px;
         margin-top: -320px;
         width: 110px;
     }
 
-    .five-plus {
+    #five {
         font-size: 28px;
         font-weight: 700;
     }
 
-    .three-plus {
+    #three {
         font-size: 18px;
         font-weight: 700;
     }
 
-    .banner-img {
+    .banner-img-container {
         width: 80%;
     }
 
@@ -301,7 +331,7 @@ button {
 
 }
 
-/* banner media query end */
+/* header section banner and navbar media query end */
 
 /* banner section style end */
 
