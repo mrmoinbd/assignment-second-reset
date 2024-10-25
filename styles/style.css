@@ -117,8 +117,8 @@ ul li a {
 /* banner section style start */
 .banner {
     margin-top: 32px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .banner-title {
@@ -234,6 +234,7 @@ button {
 
     .three-dot i {
         font-size: 26px;
+        color: white;
     }
 
     /* Banner section */
