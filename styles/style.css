@@ -41,7 +41,8 @@ body {
     font-weight: 400;
 
 }
-.card-title{
+
+.card-title {
     font-size: 1.25rem;
     font-weight: 900;
 }
@@ -130,6 +131,134 @@ ul li a {
 
 
 
+/* bmi calculator section style start */
+.bmi {
+    justify-content: center;
+    margin-top: 88px;
+    margin-bottom: 88px;
+}
+
+.bmi-title {
+    font-size: 3rem;
+}
+
+.bmi-calculator p {
+    margin-top: 14px;
+}
+
+/* .chart-full-des {
+    width: 100%;
+    height: 100%;
+    background: rgb(34, 34, 34);
+    
+} */
+.chart-container {
+    background-color: #222;
+}
+
+.chart-content {
+    justify-content: space-around;
+}
+
+.chart-column-left h4 {
+    margin-bottom: 52px;
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 52px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.chart-column-right h4 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+    text-align: left;
+    margin-top: 49px;
+}
+
+.chart-column-right p {
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+}
+
+.input-box input,
+select {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    height: 52px;
+}
+
+.input-box button {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+
+.activity-factor {
+    grid-column: span 2;
+}
+
+/* bmi calculator media query start */
+@media screen and (max-width: 576px) {
+    .chart-content {
+        flex-direction: column;
+    }
+
+    .chart-container {
+        width: 100%;
+        /* height: 555px; */
+        background: rgb(34, 34, 34);
+    }
+
+    .input-box input,
+    .input-box select {
+        color: rgba(255, 255, 255, 0.6);
+        border: none;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        width: 90%;
+
+    }
+}
+
+/* bmi calculator media query end */
+
+/* bmi calculator section style end */
+
+
+
 
 /* meet our team section style start */
 .meet-our-team h2 {
@@ -152,9 +281,10 @@ ul li a {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 1rem;
-    
+
 
 }
+
 .card-box img {
     border-radius: 18px;
     width: 100%;
@@ -183,7 +313,8 @@ ul li a {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-/*  meet our section media query end */ 
+
+/*  meet our section media query end */
 /* meet our team section style end */
 
 
