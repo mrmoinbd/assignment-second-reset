@@ -48,21 +48,26 @@ body {
 }
 
 .primary-btn {
-    padding: 0.7rem 1.2rem;
+    padding: 1rem 1.5rem;
     background-color: rgb(255, 84, 0);
     border-radius: 38px;
     border: 1px solid rgb(255, 84, 0);
     font-weight: 800;
     color: white;
+    font-size: 1rem;
 }
 
 /* common shared style end */
+
+
 /* header style start */
-.header-bg {
-    background-color: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
+#header-section {
+    background: rgb(36, 35, 35);
+    background-color: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 /* header style end */
+
 
 /* navbar style start */
 .navbar {
@@ -112,68 +117,73 @@ ul li a {
     font-style: italic;
 }
 
+.three-dot {
+    display: none;
+}
+
+/* navbar media query */
+@media screen and (max-width: 576px) {
+    .navbar {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .nav-list-items {
+        display: none;
+    }
+
+    .three-dot {
+        display: block;
+    }
+
+    .three-dot i {
+        font-size: 26px;
+        color: white;
+    }
+
+}
+
 /* navbar style end */
+
+
 
 /* banner section style start */
 .banner-container {
-    display: flex;
-    width: 80%;
-    margin: auto;
     justify-content: space-between;
 }
 
 .banner-content h2 {
-    width: 520px;
-    font-family: Inter, sans-serif;
-    font-size: 78px;
+    font-size: 5rem;
     font-weight: 900;
     text-align: left;
     margin-top: 85px;
     color: white;
-    width: 100%;
-
+    margin-bottom: 28px;
 }
 
 .miama {
     font-family: Miama, sans-serif;
-    font-size: 78px;
+    font-size: 5rem;
     font-weight: 400;
-    display: inline-block;
-    height: 40px;
-
 }
 
-/* .banner-text-des{
-    color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.5px;
-text-align: left;
-margin-top: 28px;
-} */
 .button {
     display: flex;
     gap: 14px;
     margin-top: 28px;
+    margin-bottom: 76px;
 }
 
-/* .btn-primary{
-    padding: 0.7rem 1.2rem;
-    background-color: rgb(255, 84, 0);
-    border-radius: 38px;
-    border: 1px solid rgb(255, 84, 0);
-    font-weight: 800;
-    color: white;
-    font-family: Inter , sans-serif; */
 
 .btn {
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255);
 }
 
-/* banner right side */
 .button-box {
     height: 90px;
     border-radius: 12px;
@@ -186,7 +196,7 @@ margin-top: 28px;
 }
 
 .para {
-    font-size: 13px;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.65);
     letter-spacing: 2px;
 }
@@ -237,86 +247,72 @@ margin-top: 28px;
     font-weight: 700;
 }
 
-.three-dot {
-    display: none;
-}
-
-/* header section banner and navbar media query start */
+/* banner  media query start */
 
 @media screen and (max-width: 576px) {
 
-
-    .nvbar {
-        width: 90%;
-        margin: 0rem auto;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-
-    ul li {
-        display: none;
-    }
-
-    .three-dot {
-        display: block;
-    }
-
-    .three-dot i {
-        font-size: 26px;
-        color: white;
-    }
-
-    /* Banner section */
     .banner-container {
-        display: flex;
         width: 90%;
         flex-direction: column;
         margin: 0 auto;
     }
 
     .banner-content h2 {
-        font-size: 36px;
+        font-size: 2.25rem;
         margin-top: 51px;
     }
 
     .miama {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .banner-paragraph {
-        font-size: 16px;
-        width: 260px;
+        font-size: 1rem;
+        width: 274px;
+
     }
 
-    .primary-primary {
+    .primary-btn {
         padding: 0.7rem 0.9rem;
     }
 
+    .button {
+        margin-bottom: 45px;
+    }
+
     .button-box {
-        height: 50px;
-        width: 83px;
+        /* height: 50px; */
+        /* width: 83px; */
+        width: 155px;
+        height: 74px;
+
+    }
+   
+    .circle {
+        width: 30px;
+        height: 30px;
     }
 
     #badge-five {
-        margin-left: 180px;
-        margin-top: -510px;
+        /* margin-left: 180px;
+        margin-top: -510px; */
+        margin-left: 215px;
+        margin-top: -580px;
     }
 
     #badge-three {
         margin-left: 30px;
         margin-top: -320px;
-        width: 110px;
+        /* width: 110px; */
     }
 
     #five {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 700;
     }
 
     #three {
-        font-size: 18px;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 
@@ -325,7 +321,7 @@ margin-top: 28px;
     }
 
     .para {
-        font-size: 8px;
+        font-size: 0.5rem;
         letter-spacing: 0px;
     }
 
